@@ -14,12 +14,12 @@ class Admin extends CI_Controller
         $this->load->model('Guest_model');
         $this->load->helper('url');
 
-        if (! $this->session->userdata('logged_in')) {
-            redirect('auth/login');
-        }
-        if (! is_admin_logged_in()) {
-            show_404();  
-        }
+        // if (! $this->session->userdata('logged_in')) {
+        //     redirect('auth/login');
+        // }
+        // if (! is_admin_logged_in()) {
+        //     show_404();  
+        // }
     }
 
     public function index()
